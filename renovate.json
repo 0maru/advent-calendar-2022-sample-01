@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":timezone(Asia/Tokyo)"
+  ],
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "rangeStrategy": "bump",
+  "enabledManagers": [
+    "github-actions",
+    "pub"
+  ],
+  "schedule": [
+    "after 10am on Monday"
+  ],
+  "ignoreDeps": [
+    "cloud_firestore",
+    "firebase_messaging",
+    "firebase_remote_config",
+    "firebase_crashlytics",
+    "firebase_analytics",
+    "firebase_core",
+    "firebase_dynamic_links",
+    "firebase_messaging"
+  ]
+}
